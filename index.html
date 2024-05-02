@@ -1,51 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>slickの練習</title>
-
-    <!-- slickからコピーしたCDNcode linkタグ -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick-theme.css"/>
-
-    <!-- ページのスタイル -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- jQueryの読み込み -->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.js"></script> -->
-
-
-    <!-- jsファイルの読み込み -->
-    <!-- <script src="index.js"></script> -->
-
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
 </head>
 <body>
-
-    <!-- 練習用スライダー -->
-    <div class="slider">
-        <div class="slider_item item1">1</div>
-        <div class="slider_item item2">2</div>
-        <div class="slider_item item3">3</div>
-        
-    </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-             $('.slider').slick({
-                infinite: true, //スライドのループ有効化
-                dots:true, //ドットのナビゲーションを表示
-                centerMode: true, //要素を中央寄せ
-                centerPadding:'10%', //両サイドの見えている部分のサイズ
-                autoplay:true, //自動再生
-    });
-            });
-        });
-    </script>
-    
+  <div class="slider_class">
+    <div>スライド01</div>
+    <div>スライド02</div>
+    <div>スライド03</div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-3.4.1.js"></script>
+  <script src="slick/slick.min.js"></script>
+  <script>
+    $('.slider_class').slick();
+  </script>
 </body>
-</html>
-
