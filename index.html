@@ -7,21 +7,40 @@
   <title>slick カルーセル</title>
 </head>
 <body>
-  <div class="slider_class">
-    <div class="slider_item item1">スライド1</div>
-    <div class="slider_item item2">スライド2</div>
-    <div class="slider_item item3">スライド3</div>
+
+  
+  <div class="sliderArea">
+  <div class="slider_thumb slider">
+    <div><img src="https://125naroom.com/demo/img/itukanokotonokoto01.jpg" alt="125naroom"></div>
+    <div><img src="https://125naroom.com/demo/img/itukanokotonokoto02.jpg" alt="125naroom"></div>
+    <div><img src="https://125naroom.com/demo/img/itukanokotonokoto03.jpg" alt="125naroom"></div>
+    <div><img src="https://125naroom.com/demo/img/itukanokotonokoto04.jpg" alt="125naroom"></div>
+    <div><img src="https://125naroom.com/demo/img/itukanokotonokoto05.jpg" alt="125naroom"></div>
   </div>
+  <div class="thumb">
+    <div><img src="https://125naroom.com/demo/img/itukanokotonokoto01.jpg" alt="125naroom"></div>
+    <div><img src="https://125naroom.com/demo/img/itukanokotonokoto02.jpg" alt="125naroom"></div>
+    <div><img src="https://125naroom.com/demo/img/itukanokotonokoto03.jpg" alt="125naroom"></div>
+    <div><img src="https://125naroom.com/demo/img/itukanokotonokoto04.jpg" alt="125naroom"></div>
+    <div><img src="https://125naroom.com/demo/img/itukanokotonokoto05.jpg" alt="125naroom"></div>
+  </div>
+</div>
+
   <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
   <script src="https://code.jquery.com/jquery-migrate-3.4.1.js"></script>
   <script src="slick/slick.min.js"></script>
   <script>
-    $('.slider_class').slick({
-      arrows: true,
-      autoplay: true,
-      dots: true,
-      autoplaySpeed: 3000,
-      speed: 100,
+  $(document).on('ready', function() {
+    $('.slider_thumb').slick({
+        arrows:false, // スライドの左右の矢印ボタン
+        asNavFor:'.thumb' // スライダを他のスライダのナビゲーションに設定する（class名またはID名）
     });
+    $('.thumb').slick({
+        asNavFor:'.slider_thumb', // スライダを他のスライダのナビゲーションに設定する（class名またはID名）
+        focusOnSelect: true, // クリックでのスライド切り替えを有効にするか
+        slidesToShow:4, // 表示するスライド数を設定
+        slidesToScroll:1 // スクロールするスライド数を設定
+    });  
+  });
   </script>
 </body>
