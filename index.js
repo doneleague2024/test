@@ -1,7 +1,4 @@
-$(function(){
-    $('.slider').slick();
-    //$(クラス名).slick();で使用できます。
-})
+
 $(function(){
     $('.slider').slick({
         autoplay:true,
@@ -11,3 +8,9 @@ $(function(){
         dots: true, // インジケーター
     });
 })
+
+$(".slide-items").slick({
+  autoplay: true, // 自動再生
+  arrows: true, // 矢印
+  dots: true, // インジケーター
+});
