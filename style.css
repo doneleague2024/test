@@ -45,3 +45,14 @@ html, body {
 .thumb .slick-slide:hover {
   opacity: .7;
 }
+
+
+body {
+    font-size: 14px;
+  }
+}
+.section {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
