@@ -1,6 +1,5 @@
-html, body {
-  margin: 0;
-  padding: 0;
+body {
+    font-size: 10px;
 }
 * {
   box-sizing: border-box;
@@ -46,10 +45,6 @@ html, body {
   opacity: .7;
 }
 
-body {
-    font-size: 14px;
-  }
-}
 .section {
   max-width: 300px;
   margin: 0 auto;
