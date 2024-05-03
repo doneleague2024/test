@@ -1,5 +1,6 @@
-body {
-    font-size: 10px;
+html, body {
+  margin: 0;
+  padding: 0;
 }
 * {
   box-sizing: border-box;
@@ -16,7 +17,6 @@ body {
   margin: 0 5px;
 }
 .slick-slide img {
-  
   width: 100%;
   height: auto;
 }
@@ -46,6 +46,10 @@ body {
   opacity: .7;
 }
 
+body {
+    font-size: 14px;
+  }
+}
 .section {
   max-width: 300px;
   margin: 0 auto;
